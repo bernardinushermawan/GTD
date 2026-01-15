@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="JavaScript.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Counter App</h1>
+        <p>Current Count: <span id="number">0</span></p>
+            
+        <div class="container2">
+            <button id="increase" onclick="increase()">Increase</button>
+            <button id="decrease" onclick="decrease()">Decrease</button>
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+        <p id="warning" class="red">Counter cannot be negative number!</p>
+    </div>
+    <div class="container">
+        <h1>Comment Box</h1>
+        <form onsubmit="return validateForm()">
+            <input type="text" placeholder="Email Address" id="email">
+            <textarea name="comment" id="comment" placeholder="Comment"></textarea>
+            <input type="submit" id="submit">
+            <p id="warning2" class="red">Invalid email!</p>
+            <p id="warning3" class="red">Please enter a comment!</p>
+        </form>
+    </div>
+    <script src="JavaScript.js"></script>
+</body>
+</html>
